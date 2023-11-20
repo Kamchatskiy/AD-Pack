@@ -12,8 +12,8 @@ import (
 func UNUSED(x ...interface{}) {}
 
 func main() {
-	var host string = os.Args[1]
+	var url string = os.Args[1]
 	var port int = 0
-	UNUSED(host, port)
+	UNUSED(url, port)
 
 }
