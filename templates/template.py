@@ -8,8 +8,10 @@ import re
 import json
 import base64
 import string
+import tqdm
 
 host = sys.argv[1]
+port = ...
 
 #===========================================================
 #                    EXPLOIT GOES HERE
