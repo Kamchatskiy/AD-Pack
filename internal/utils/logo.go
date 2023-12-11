@@ -1,16 +1,12 @@
-package logo
+package utils
 
 import (
-	"context"
 	"fmt"
 
 	"../colors"
 )
 
-func Print(ctx context.Context) {
-	if ctx.Value("LogoEnabled") == false {
-		return
-	}
+func PrintLogo() {
 	primaryColor := colors.Colors.Primary
 	fmt.Println("                                              ", primaryColor)
 	fmt.Println("          _____         _____           _    ", primaryColor)
@@ -19,6 +15,5 @@ func Print(ctx context.Context) {
 	fmt.Println("  / /\\ \\ | |  | |______|  ___/ _` |/ __| |/ /", primaryColor)
 	fmt.Println(" / ____ \\| |__| |      | |  | (_| | (__|   < ", primaryColor)
 	fmt.Println("/_/    \\_\\_____/       |_|   \\__,_|\\___|_|\\_", primaryColor)
-	fmt.Println("                                              ")
 	fmt.Println("                                              ")
 }
